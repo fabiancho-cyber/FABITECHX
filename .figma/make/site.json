@@ -1,0 +1,13 @@
+{
+  "description": "Create professional web pages using Markdown with custom logos and effects, designed for users seeking a polished online presence.",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "/fabitech-logo.png"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
