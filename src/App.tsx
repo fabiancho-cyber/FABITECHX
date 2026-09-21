@@ -646,6 +646,16 @@ function Footer() {
 
 // ── App ───────────────────────────────────────────────────────────────
 export default function App() {
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+    window.history.replaceState(null, '', window.location.pathname + window.location.search)
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+
+    return () => {
+      window.history.scrollRestoration = 'auto'
+    }
+  }, [])
+
   useReveal()
   return (
     <div className="min-h-screen" style={{ background: '#0d0d0d', color: '#f0f0f0' }}>
