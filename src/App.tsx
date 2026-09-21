@@ -19,6 +19,7 @@ const BLUE = '#1a6cf5'
 const WHATSAPP = 'https://wa.me/573164598263?text=Hello%20Cristian%2C%20I%27m%20interested%20in%20your%20web%20design%20services.%20I%27d%20like%20to%20discuss%20a%20project.'
 const EMAIL = 'fabitechFT@hotmail.com'
 const EMAIL_COMPOSE_URL = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(EMAIL)}&subject=${encodeURIComponent('Website Project Inquiry')}`
+const PUBLIC_ASSET_BASE = import.meta.env.BASE_URL
 
 // ── Data ─────────────────────────────────────────────────────────────
 const presentationProjects = [
@@ -27,7 +28,7 @@ const presentationProjects = [
     cat: 'Presentation Website',
     desc: 'A refined, conversion-focused website that presents a brand with clarity, credibility and a polished visual identity.',
     link: 'https://fabiancho-cyber.github.io/fabitech/',
-    preview: '/fabitech-preview.png',
+    preview: `${PUBLIC_ASSET_BASE}fabitech-preview.png`,
     label: 'Live Project',
   },
 ]
@@ -38,7 +39,7 @@ const ecommerceProjects = [
     cat: 'Sales & E-Commerce',
     desc: 'A sophisticated online shopping experience designed to showcase products, streamline discovery and guide customers confidently toward purchase.',
     link: 'https://fabiancho-cyber.github.io/FABISHOP/',
-    preview: '/fabishop-preview.png',
+    preview: `${PUBLIC_ASSET_BASE}fabishop-preview.png`,
     label: 'Live Project',
   },
 ]
