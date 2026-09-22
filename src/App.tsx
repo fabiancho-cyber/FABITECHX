@@ -1,5 +1,5 @@
 import { useEffect, useState, type KeyboardEvent } from 'react'
-import logoImg from './assets/logo.jpg'
+import logoImg from './assets/logo.webp'
 
 // ── Scroll-reveal hook ───────────────────────────────────────────────
 function useReveal() {
@@ -28,7 +28,7 @@ const presentationProjects = [
     cat: 'Presentation Website',
     desc: 'A refined, conversion-focused website that presents a brand with clarity, credibility and a polished visual identity.',
     link: 'https://fabiancho-cyber.github.io/fabitech/',
-    preview: `${PUBLIC_ASSET_BASE}fabitech-preview.png`,
+    preview: `${PUBLIC_ASSET_BASE}fabitech-preview.webp`,
     label: 'Live Project',
   },
 ]
@@ -39,7 +39,7 @@ const ecommerceProjects = [
     cat: 'Sales & E-Commerce',
     desc: 'A sophisticated online shopping experience designed to showcase products, streamline discovery and guide customers confidently toward purchase.',
     link: 'https://fabiancho-cyber.github.io/FABISHOP/',
-    preview: `${PUBLIC_ASSET_BASE}fabishop-preview.png`,
+    preview: `${PUBLIC_ASSET_BASE}fabishop-preview.webp`,
     label: 'Live Project',
   },
 ]
@@ -351,6 +351,7 @@ function Portfolio() {
                   title={`${p.name} preview`}
                   alt={`${p.name} website preview`}
                   loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover object-top"
                 />
               </div>

@@ -97,6 +97,11 @@ body {
 }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
 
+main > section:not(#home), footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .app-enter, .hero-item {
     animation: none;
@@ -198,4 +203,20 @@ body {
   overflow: hidden;
   object-fit: cover;
   object-position: center center;
+}
+
+@media (max-width: 768px) {
+  .glass, .glass-blue {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .orb {
+    filter: none;
+    opacity: 0.08;
+  }
+
+  .hero-grid {
+    background-size: 42px 42px;
+  }
 }
