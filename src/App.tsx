@@ -167,26 +167,26 @@ function Hero() {
       <div className="orb w-64 h-64 opacity-8" style={{ background: BLUE, bottom: '15%', left: '-5%' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <p className="section-label mb-6">Web Design & Development · Serving the U.S. & Colombia</p>
-          <h1 className="font-display text-5xl md:text-6xl xl:text-7xl font-bold leading-tight mb-6" style={{ fontFamily: 'Fraunces, serif', lineHeight: 1.05 }}>
+        <div className="hero-content">
+          <p className="hero-item section-label mb-6">Web Design & Development · Serving the U.S. & Colombia</p>
+          <h1 className="hero-item font-display text-5xl md:text-6xl xl:text-7xl font-bold leading-tight mb-6" style={{ fontFamily: 'Fraunces, serif', lineHeight: 1.05 }}>
             Modern Websites.{' '}
             <span className="gradient-text">Built to Make Your Business Stand Out.</span>
           </h1>
-          <p className="text-white/60 text-lg leading-relaxed mb-4 max-w-lg">
+          <p className="hero-item text-white/60 text-lg leading-relaxed mb-4 max-w-lg">
             I design and develop professional, responsive websites that help small businesses, entrepreneurs, creators and personal brands build credibility, attract customers and grow online.
           </p>
-          <p className="text-white/40 text-sm leading-relaxed mb-10 max-w-lg">
+          <p className="hero-item text-white/40 text-sm leading-relaxed mb-10 max-w-lg">
             I'm Cristian Fabian Jimenez Sandoval — a web creator from Colombia helping ambitious brands in the United States and beyond turn ideas into modern, functional and professional digital experiences.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="hero-item flex flex-wrap gap-4">
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Start Your Project
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
             <a href="#portfolio" className="btn-outline">Explore My Work</a>
           </div>
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/45">
+          <div className="hero-item mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/45">
             <span>✓ Clear project scope</span>
             <span>✓ Responsive by default</span>
             <span>✓ Direct communication</span>
@@ -658,7 +658,7 @@ export default function App() {
 
   useReveal()
   return (
-    <div className="min-h-screen" style={{ background: '#0d0d0d', color: '#f0f0f0' }}>
+    <div className="app-enter min-h-screen" style={{ background: '#0d0d0d', color: '#f0f0f0' }}>
       <Navbar />
       <main>
         <Hero />
